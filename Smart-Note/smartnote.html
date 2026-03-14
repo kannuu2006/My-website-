@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Notes</title>
+    <link rel="stylesheet" href="smartnote.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Smart Notes</h1>
+
+        <div class="top-bar">
+
+            <input type="text" id="search" placeholder="Search notes...">
+
+            <button onclick="openPopup()">Add Note</button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div id="notesContainer"></div>
+
+    </main>
+
+
+    <!-- POPUP -->
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <h2>Create Note</h2>
+
+            <textarea id="noteInput" placeholder="Write your note..."></textarea>
+
+            <div class="buttons">
+
+                <button onclick="saveNote()">✔ Save</button>
+
+                <button onclick="closePopup()">✖ Cancel</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="smartnote.js"></script>
+
+</body>
+
+</html>
